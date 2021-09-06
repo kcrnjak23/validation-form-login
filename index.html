@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Validation Form & Login/Create Account</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+
+        <div class="header">
+            <h2>Login</h2>
+        </div>
+
+        <form id="formLogin" class="form" action="">
+            <div class="formField">
+                <label for="email">Email</label>
+                <input id="emailLogin" type="text">
+                <small></small>
+            </div>
+            <div class="formField">
+                <label for="password">Password</label>
+                <input id="passwordLogin" type="password">
+                <small></small>
+            </div>
+            <button type="submit">Continue</button>
+            <a id="noAccount" href="">Don't have account? Create Account</a>
+        </form>
+
+        <form id="formRegister" class="form formHidden" action="">
+            <div class="formField">
+                <label for="fname">First Name</label>
+                <input id="fname" type="text">
+                <small>Error</small>
+            </div>
+            <div class="formField">
+                <label for="lname">Last Name</label>
+                <input id="lname" type="text">
+                <small>error</small>
+            </div>
+            <div class="formField">
+                <label for="email">Email</label>
+                <input id="email" type="text">
+                <small></small>
+            </div>
+            <div class="formField">
+                <label for="password">Password</label>
+                <input id="password" type="password">
+                <small></small>
+            </div>
+            <button type="submit">Submit</button>
+            <a id="haveAccount" href="">Already have an account? Sign in</a>
+        </form>
+
+    </div>
+
+    <div>
+        <h2 id="successMessage"></h2>
+    </div>
+        
+        <script src="main.js"></script>
+    </body>
+
+</html>

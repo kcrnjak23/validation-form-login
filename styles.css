@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(34, 167, 240);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    border-radius: 0.4rem;
+    overflow: hidden;
+    width: 60vh;
+    max-width: 100%;   
+}
+
+.header{
+    background: rgb(250, 250, 250);
+    height: 10vh;
+    font-size: 1rem;
+    border-bottom: 0.1rem solid #f0f0f0;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+}
+
+.form{
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 3rem; 
+}
+
+.formHidden{
+    display: none;
+}
+
+.formField{ 
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.formField label{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.formField input{
+    border: 0.1rem solid rgb(191, 191, 191);
+    border-radius: 0.2rem;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.formField small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0.5rem;
+}
+
+.formField.error small{
+    visibility: visible;
+    color: red;
+}
+
+.form button{
+    background-color: rgb(34, 167, 240, 1);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    display: block;
+    font-family: inherit;
+    border: 0.1rem solid rgb(34, 167, 240);
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.form a{
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    color: black;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+#successMessage{
+    display: none;
+    font-size: 2rem;
+    font-family: inherit;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 80%;
+    }
+}
